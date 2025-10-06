@@ -37,6 +37,11 @@ export function AboutPage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
+      <img
+        src={eu}
+        alt="Minha foto"
+        className="rounded-2xl shadow-lg max-w-xs mx-auto mb-6"
+      />
       <h2
         className={`text-3xl font-semibold mb-6 text-center ${
           isDark ? "text-white" : "text-gray-900"
@@ -44,11 +49,6 @@ export function AboutPage() {
       >
         Sobre Mim
       </h2>
-      <img
-        src={eu}
-        alt="Minha foto"
-        className="rounded-2xl shadow-lg max-w-xs mx-auto mb-6"
-      />
       <p
         className={`text-lg max-w-3xl mx-auto mb-6 text-center ${
           isDark ? "text-white" : "text-gray-900"

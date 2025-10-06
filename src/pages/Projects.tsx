@@ -50,37 +50,37 @@ export function ProjectsPage() {
   const otherProjects: Project[] = [ 
     {
       title: "Youtube Downloader",
-      description: "Aplicativo para baixar vídeos do YouTube em diferentes resoluções e formatos, incluindo MP4 e MP3.",
+      description: "Aplicativo desktop desenvolvido em Python para baixar vídeos e áudios do YouTube em diferentes resoluções e formatos, incluindo MP4 e MP3. O sistema permite ao usuário escolher a qualidade do download, visualizar o progresso em tempo real e salvar os arquivos de forma organizada em diretórios locais, oferecendo uma interface simples e intuitiva construída com Tkinter.",
       url: "https://github.com/iagocpv/yt-downloader",
       tech: "Python, Tkinter, yt-dlp"
     },   
     {
       title: "Foodtracker",
-      description: "App para monitorar alimentação de pets, alertando quando o pote de ração estiver vazio.",
+      description: "Aplicativo voltado ao monitoramento de alimentação de pets, que utiliza sensores e integração com backend para alertar o usuário quando o pote de ração estiver vazio. O sistema registra horários de alimentação, consumo médio e status do recipiente, possibilitando acompanhar hábitos do animal e receber notificações automáticas via API. O design foi planejado no Figma e o backend implementado em FastAPI.",
       url: "https://github.com/Grupo-Syntax-Squad/food-tracker",
       tech: "Python, FastAPI, Postgres, Figma, Docker"
     },
     {
       title: "App multifunções",
-      description: "Aplicativo Flutter com funções como To-Do List, Lista de compras, Notas rápidas, pesquisa de cidades, entre outras.",
+      description: "Aplicativo móvel criado em Flutter que concentra diversas ferramentas do dia a dia em uma única interface, como To-Do List, lista de compras, notas rápidas, calculadora e pesquisa de cidades. O projeto tem como objetivo oferecer praticidade e organização pessoal, com armazenamento local e design responsivo. Cada funcionalidade foi projetada para funcionar de forma independente dentro do mesmo app.",
       url: "https://github.com/iagocpv/flutter_multifuncoes",
       tech: "Dart, Flutter"
     },
     {
       title: "Atlantis",
-      description: "Sistema para gerenciamento de acomodações de clientes e dependentes para uma rede de resorts fictícia.",
+      description: "Sistema web desenvolvido para o gerenciamento de acomodações e reservas em uma rede de resorts fictícia. A aplicação permite cadastrar clientes, dependentes e quartos, além de gerenciar check-ins, check-outs e status das hospedagens. O projeto foca em boas práticas de componentização com React e na criação de uma interface moderna e responsiva voltada à administração hoteleira.",
       url: "https://github.com/iagocpv/atlantis",
       tech: "React, Typescript"
     },
     {
       title: "Autobots",
-      description: "Sistema para gerenciamento de vendas de veículos.",
+      description: "Aplicação desenvolvida em Java com Spring para o gerenciamento de vendas de veículos. O sistema inclui cadastro de clientes, carros e vendedores, além do registro de negociações e relatórios básicos. Foi implementado com o banco de dados H2 para facilitar o desenvolvimento local e demonstrar o uso de entidades, relacionamentos e operações CRUD em ambiente Spring Boot.",
       url: "https://github.com/iagocpv/autobots",
       tech: "Java, Spring, H2"
     },
     {
       title: "Loteria",
-      description: "Aplicativo web para mostrar os dados do último sorteio da Mega-sena, Lotofácil e Quina.",
+      description: "Aplicativo web que consome APIs públicas para exibir os resultados mais recentes das principais loterias brasileiras, como Mega-Sena, Lotofácil e Quina. O sistema apresenta informações como números sorteados, data do concurso e premiações, além de oferecer uma interface simples e responsiva para facilitar a consulta rápida pelos usuários.",
       url: "https://github.com/iagocpv/LabDevWeb",
       tech: "React, Typescript"
     }
