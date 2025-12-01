@@ -11,6 +11,13 @@ export function ProjectsPage() {
 
   const apiProjects: Project[] = [
     {
+      title: "API 6 - Synapse",
+      description: "Plataforma inteligente desenvolvida para a DomRock, utilizando uma base de dados fornecida em arquivos CSV como referência para estruturar os relatórios e o módulo de chat. O sistema automatiza a geração de relatórios corporativos, oferece consultas em linguagem natural e disponibiliza previsões e análises em tempo real, tornando a exploração de dados mais rápida e acessível.",
+      url: "https://github.com/Grupo-Syntax-Squad/synapse",
+      contribution: "Cadastro de usuários, autenticação/autorização, criação dos módulos de websocket e notificações, envio de relatórios por email, ",
+      tech: "Python, FastAPI, React, PostgreSQL, SpaCy, Transformers, Torch, Docker, Redis, Prometheus, Grafana, Loki"
+    },
+    {
       title: "API 5 - Neurahive",
       description: "Plataforma desenvolvida para a empresa Pro4Tech com foco em gerenciar agentes de inteligência artificial. O sistema permite cadastrar e configurar agentes que respondem a perguntas dos usuários a partir de dados estruturados em arquivos CSV, facilitando a consulta e análise de informações de forma automatizada.",
       url: "https://github.com/Grupo-Syntax-Squad/neurahive",
@@ -49,6 +56,18 @@ export function ProjectsPage() {
   
   const otherProjects: Project[] = [ 
     {
+      title: "Tokenização SpaCy",
+      description: "Este projeto implementa uma pipeline de tokenização utilizando SpaCy e filtrando tokens que não são palavras usando expressões regulares. É baixado um texto do Projeto Gutenberg(como Dom Casmurro), processado para extrair apenas as palavras relevantes e depois são exibidas estatísticas sobre o número de tokens antes e depois da filtragem.",
+      url: "https://github.com/iagocpv/tokenizacao-spacy",
+      tech: "Python, SpaCy"
+    }, 
+    {
+      title: "Parceiros",
+      description: "Formulário simples para cadastro de parceiros comerciais, com busca no ViaCep para preenchimento automático do endereço e ReceitaWS para validação e autopreenchimento dos dados do CNPJ. Os dados são salvos utilizando procedures no banco Postgres.",
+      url: "https://github.com/iagocpv/parceiros",
+      tech: "React, Typescript, Spring Boot, Java, Postgres"
+    }, 
+    {
       title: "Youtube Downloader",
       description: "Aplicativo desktop desenvolvido em Python para baixar vídeos e áudios do YouTube em diferentes resoluções e formatos, incluindo MP4 e MP3. O sistema permite ao usuário escolher a qualidade do download, visualizar o progresso em tempo real e salvar os arquivos de forma organizada em diretórios locais, oferecendo uma interface simples e intuitiva construída com Tkinter.",
       url: "https://github.com/iagocpv/yt-downloader",
@@ -58,7 +77,7 @@ export function ProjectsPage() {
       title: "Foodtracker",
       description: "Aplicativo voltado ao monitoramento de alimentação de pets, que utiliza sensores e integração com backend para alertar o usuário quando o pote de ração estiver vazio. O sistema registra horários de alimentação, consumo médio e status do recipiente, possibilitando acompanhar hábitos do animal e receber notificações automáticas via API. O design foi planejado no Figma e o backend implementado em FastAPI.",
       url: "https://github.com/Grupo-Syntax-Squad/food-tracker",
-      tech: "Python, FastAPI, Postgres, Figma, Docker"
+      tech: "Python, FastAPI, Postgres, Docker"
     },
     {
       title: "App multifunções",
