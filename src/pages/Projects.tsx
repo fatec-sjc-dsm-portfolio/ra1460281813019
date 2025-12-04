@@ -14,7 +14,7 @@ export function ProjectsPage() {
       title: "API 6 - Synapse",
       description: "Plataforma inteligente desenvolvida para a DomRock, utilizando uma base de dados fornecida em arquivos CSV como referência para estruturar os relatórios e o módulo de chat. O sistema automatiza a geração de relatórios corporativos, oferece consultas em linguagem natural e disponibiliza previsões e análises em tempo real, tornando a exploração de dados mais rápida e acessível.",
       url: "https://github.com/Grupo-Syntax-Squad/synapse",
-      contribution: "Cadastro de usuários, autenticação/autorização, criação dos módulos de websocket e notificações, envio de relatórios por email, ",
+      contribution: "Cadastro de usuários, autenticação/autorização, criação dos módulos de websocket e notificações, envio de relatórios por email, previsões + cache do Prophet.",
       tech: "Python, FastAPI, React, PostgreSQL, SpaCy, Transformers, Torch, Docker, Redis, Prometheus, Grafana, Loki"
     },
     {
