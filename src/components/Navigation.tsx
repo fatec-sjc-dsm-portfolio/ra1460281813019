@@ -36,22 +36,31 @@ export default function Navigation() {
             {isDark ? <Moon/> : <Sun/>}
           </Button>
         </div>
+        
+        <div  className="flex gap-15 sm:hidden text-lg items-center">
+          {!isOpen && 
+            <Link to="/">
+              <Button variant="ghost">
+                <Home/>
+              </Button>
+            </Link>
+          }
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="sm:hidden text-white focus:outline-none"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+          {!isOpen && 
+            <Button onClick={toggleTheme} variant="ghost">
+              {isDark ? <Moon/> : <Sun/>}
+            </Button>}
+        </div>
 
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="sm:hidden text-white focus:outline-none"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
       </div>
 
       {isOpen && (
         <div className="flex flex-col gap-4 mt-4 sm:hidden">
-          <Link to="/" onClick={() => setIsOpen(false)}>
-            <Button variant="ghost" className="w-full text-white">
-              <Home className="mr-2" /> Início
-            </Button>
-          </Link>
           <Link to="/projetos" onClick={() => setIsOpen(false)}>
             <Button variant="ghost" className="w-full text-white">
               <FileText className="mr-2" /> Projetos
@@ -67,16 +76,6 @@ export default function Navigation() {
               <Mail className="mr-2" /> Contato
             </Button>
           </Link>
-          <Button
-            onClick={() => {
-              toggleTheme();
-              setIsOpen(false);
-            }}
-            variant="ghost"
-            className="w-full text-white"
-          >
-            {isDark ? <Moon className="mr-2" /> : <Sun className="mr-2" />} Tema
-          </Button>
         </div>
       )}
     </nav>
